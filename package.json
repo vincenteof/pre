@@ -2,12 +2,16 @@
   "name": "pre",
   "version": "0.0.1",
   "description": "all things before you write codes",
-  "main": "index.js",
+  "main": "./lib/index.js",
+  "bin": {
+    "pre": "./lib/index.js"
+  },
   "author": "vincenteof",
   "license": "MIT",
   "dependencies": {
     "@typescript-eslint/eslint-plugin": "^4.27.0",
     "@typescript-eslint/parser": "^4.27.0",
-    "eslint": "^7.28.0"
+    "eslint": "^7.28.0",
+    "typescript": "^4.3.3"
   }
 }

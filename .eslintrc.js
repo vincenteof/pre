@@ -1,5 +1,10 @@
 module.exports = {
   "root": true,
+  "env": {
+    "es6": true,
+    "browser": true,
+    "commonjs": true,
+  },
   "parser": "@typescript-eslint/parser",
   "plugins": [
     "@typescript-eslint"
