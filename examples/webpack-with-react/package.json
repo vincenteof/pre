@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "webpack --mode development",
     "start": "webpack serve --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "lint": "pre lint"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
