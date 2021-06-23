@@ -1,0 +1,3 @@
+[submodule "examples/webpack-with-react"]
+	path = examples/webpack-with-react
+	url = https://github.com/vincenteof/webpack-with-react

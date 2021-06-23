@@ -1,0 +1,12 @@
+{
+  "extends": "stylelint-config-sass-guidelines",
+  "ignoreFiles": ["**/*.js", "**/dist/**/*.css"],
+  "rules": {
+    "no-missing-end-of-source-newline": [
+      true,
+      {
+        "severity": "warning"
+      }
+    ]
+  }
+}
