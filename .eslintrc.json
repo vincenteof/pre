@@ -1,14 +1,17 @@
 {
   "env": { "browser": true, "es6": true, "node": true },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
   "parser": "babel-eslint",
   "parserOptions": {
     "ecmaFeatures": { "jsx": true },
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react"],
+  "plugins": ["react", "prettier"],
   "settings": { "react": { "version": "detect" } },
+  "rules": {
+    "prettier/prettier": 2 // Means error
+  },
   "overrides": [
     {
       "files": ["**/*.ts", "**/*.tsx"],
@@ -16,6 +19,7 @@
       "extends": [
         "eslint:recommended",
         "plugin:react/recommended",
+        "prettier",
         "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended"
       ],
@@ -25,7 +29,7 @@
         "ecmaVersion": 2018,
         "sourceType": "module"
       },
-      "plugins": ["react", "@typescript-eslint"],
+      "plugins": ["react", "prettier", "@typescript-eslint"],
       "settings": { "react": { "version": "detect" } }
     }
   ]
